@@ -7,5 +7,6 @@ outputs <- c(list.files('figure/'),
 file.remove(outputs)
 
 ## run my scripts
-source("01_filterReorder.R")
-source("02_aggregatePlot.R")
+source("dataPrep.r")
+source("plotByGroup.r")
+#source("plot.r") #not exactly working yet

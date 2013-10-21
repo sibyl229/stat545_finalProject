@@ -14,17 +14,44 @@ p <- p + geom_bar(stat="identity") +coord_flip()
 countryDat <- read.table('result/countryDat.tsv', sep='\t', header=TRUE)
 countryDat <- within(countryDat, country_txt <- reorder(country_txt, -totalEvents))
 
-myPdf <- function(p, fileName, ...){
-  fname <- paste('figure', fileName,  sep = "/")
-  pdf(fname, ...) # starts writing a PDF to file
-  p                    # makes the actual plot
-  dev.off()                     # closes the PDF file
-}
 
-myPdf(p, 'SouthAsiaTotalAttackes.pdf')
 pdf('figure/SouthAsiaTotalAttackes.pdf') # starts writing a PDF to file
 p                    # makes the actual plot
 dev.off()   
+
+
+
+pEventKilled <- ggplot(countryDat,
+                       aes(x=totalEvents, y=totalKilled, color=region_txt))
+pEventKilled + geom_point() +
+  scale_x_log10() + scale_y_log10() 
+
+highLight <- function(x, labels){
+  newx <- c()
+  highlighted <- x %in% labels
+  newx[highlighted] <- as.character(x)[highlighted]
+  newx[!highlighted] <- 'Others'
+  newx <- factor(newx, levels=c(labels, 'Others'))
+  return(newx)
+}
+
+iRegions <- c('Central Asia', 'South Asia', 'South America', 
+              'Middle East & North Africa')
+pEventTrend <- ggplot(countryAnnualDat,
+                      aes(x=iyear, y=totalEvents, size=totalKilled, 
+                          color=highLight(region_txt, iRegions)))
+pEventTrend + geom_point(alpha=0.3) + scale_size_area(max_size=10) + 
+  facet_wrap(~ region_txt) +
+  geom_smooth(method='loess') 
+
+
+pEventTrend2 <- ggplot(subset(countryAnnualDat, region_txt=='Middle East & North Africa'),
+                       aes(x=iyear, y=totalEvents, size=totalKilled, 
+                           color=country_txt))
+pEventTrend2 + geom_point(alpha=0.3) + scale_size_area(max_size=10) + 
+  geom_smooth(method='loess') 
+
+
 # p
 # dev.print(pdf,        # copies the plot to a the PDF file
 #           "figure/testFigure_method2.pdf")
