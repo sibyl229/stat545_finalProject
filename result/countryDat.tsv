@@ -1,0 +1,210 @@
+country_txt	totalEvents	totalKilled	totalWounded	foreignTarget	ratioForeignTarget	region_txt
+Afghanistan	3039	8150	10520	393	0.129318854886476	South Asia
+Albania	70	41	124	9	0.128571428571429	Eastern Europe
+Algeria	2630	10883	8862	97	0.0368821292775665	Middle East & North Africa
+Andorra	1	0	0	1	1	Western Europe
+Angola	492	2935	2032	75	0.152439024390244	Sub-Saharan Africa
+Antigua and Barbuda	2	1	0	1	0.5	Central America & Caribbean
+Argentina	799	489	751	184	0.230287859824781	South America
+Armenia	19	31	68	6	0.315789473684211	Russia & the Newly Independent States (NIS)
+Australia	76	31	141	28	0.368421052631579	Australasia & Oceania
+Austria	105	28	124	47	0.447619047619048	Western Europe
+Azerbaijan	42	252	183	6	0.142857142857143	Russia & the Newly Independent States (NIS)
+Bahamas	4	1	0	2	0.5	Central America & Caribbean
+Bahrain	45	16	24	12	0.266666666666667	Middle East & North Africa
+Bangladesh	764	984	6928	13	0.0170157068062827	South Asia
+Barbados	3	76	3	1	0.333333333333333	Central America & Caribbean
+Belarus	10	14	212	2	0.2	Russia & the Newly Independent States (NIS)
+Belgium	139	36	234	84	0.60431654676259	Western Europe
+Belize	7	3	0	5	0.714285714285714	Central America & Caribbean
+Benin	8	0	8	0	0	Sub-Saharan Africa
+Bermuda	1	1	0	1	1	Central America & Caribbean
+Bhutan	5	9	5	0	0	South Asia
+Bolivia	313	42	164	44	0.140575079872204	South America
+Bosnia-Herzegovina	149	75	140	54	0.36241610738255	Eastern Europe
+Botswana	8	11	10	0	0	Sub-Saharan Africa
+Brazil	256	213	160	50	0.1953125	South America
+Brunei	1	0	1	0	0	Southeast Asia
+Bulgaria	43	20	5	7	0.162790697674419	Eastern Europe
+Burkina Faso	3	2	2	0	0	Sub-Saharan Africa
+Burundi	397	4248	1852	32	0.0806045340050378	Sub-Saharan Africa
+Cambodia	256	543	786	56	0.21875	Southeast Asia
+Cameroon	28	123	14	6	0.214285714285714	Sub-Saharan Africa
+Canada	64	338	64	20	0.3125	North America
+Cayman Islands	1	0	1	1	1	Central America & Caribbean
+Central African Republic	36	144	53	7	0.194444444444444	Sub-Saharan Africa
+Chad	52	562	184	17	0.326923076923077	Sub-Saharan Africa
+Chile	2313	223	722	181	0.0782533506268915	South America
+China	173	467	1176	13	0.0751445086705202	East Asia
+Colombia	7453	13976	9063	385	0.0516570508520059	South America
+Comoros	5	1	2	0	0	Sub-Saharan Africa
+Congo (Brazzaville)	26	171	51	9	0.346153846153846	Sub-Saharan Africa
+Congo (Kinshasa)	205	1654	550	41	0.2	Sub-Saharan Africa
+Corsica	1351	45	117	1317	0.974833456698742	Western Europe
+Costa Rica	67	17	38	33	0.492537313432836	Central America & Caribbean
+Croatia	53	247	72	35	0.660377358490566	Eastern Europe
+Cuba	30	8	10	2	0.0666666666666667	Central America & Caribbean
+Cyprus	112	45	41	47	0.419642857142857	Middle East & North Africa
+Czech Republic	17	4	27	2	0.117647058823529	Eastern Europe
+Czechoslovakia	10	27	23	5	0.5	Eastern Europe
+Denmark	36	3	23	21	0.583333333333333	Western Europe
+Djibouti	19	269	147	3	0.157894736842105	Sub-Saharan Africa
+Dominica	3	3	10	0	0	Central America & Caribbean
+Dominican Republic	87	32	88	9	0.103448275862069	Central America & Caribbean
+East Germany (GDR)	38	2	37	36	0.947368421052632	Eastern Europe
+Ecuador	211	52	65	44	0.208530805687204	South America
+Egypt	507	925	1250	35	0.0690335305719921	Middle East & North Africa
+El Salvador	5320	12053	5062	138	0.0259398496240602	Central America & Caribbean
+Equatorial Guinea	2	2	3	0	0	Sub-Saharan Africa
+Eritrea	10	46	62	1	0.1	Sub-Saharan Africa
+Estonia	14	2	11	2	0.142857142857143	Russia & the Newly Independent States (NIS)
+Ethiopia	133	1320.000000001	1020.99999999	47	0.353383458646617	Sub-Saharan Africa
+Falkland Islands	1	0	0	1	1	South America
+Fiji	17	8	18	2	0.117647058823529	Australasia & Oceania
+Finland	6	9	3	1	0.166666666666667	Western Europe
+France	1140	215	1413	329	0.28859649122807	Western Europe
+French Guiana	7	1	13	5	0.714285714285714	South America
+French Polynesia	3	0	13	3	1	Australasia & Oceania
+Gabon	4	6	1	1	0.25	Sub-Saharan Africa
+Gambia	3	13	2	0	0	Sub-Saharan Africa
+Georgia	204	274	376	36	0.176470588235294	Russia & the Newly Independent States (NIS)
+Germany	564	43	482	315	0.558510638297872	Western Europe
+Ghana	17	19	10	1	0.0588235294117647	Sub-Saharan Africa
+Gibraltar	1	3	0	1	1	Western Europe
+Great Britain	616	532	2963	99	0.160714285714286	Western Europe
+Greece	1071	318	708	341	0.318394024276377	Western Europe
+Grenada	5	9	21	1	0.2	Central America & Caribbean
+Guadeloupe	56	8	45	40	0.714285714285714	Central America & Caribbean
+Guatemala	2043	5161	1227	165	0.0807635829662261	Central America & Caribbean
+Guinea	20	181	53	2	0.1	Sub-Saharan Africa
+Guinea-Bissau	8	16	27	1	0.125	Sub-Saharan Africa
+Guyana	25	41	24	2	0.08	South America
+Haiti	212	329	300	20	0.0943396226415094	Central America & Caribbean
+Honduras	318	298	239	86	0.270440251572327	Central America & Caribbean
+Hong Kong	26	4	102	14	0.538461538461538	East Asia
+Hungary	43	6	15	7	0.162790697674419	Eastern Europe
+Iceland	2	0	0	1	0.5	Western Europe
+India	6905	16722.99999999	24555.999999996	95	0.0137581462708182	South Asia
+Indonesia	558	1086.000000003	2287	44	0.0788530465949821	Southeast Asia
+International	1	1	12	1	1	Middle East & North Africa
+Iran	636	1522	4018	101	0.158805031446541	Middle East & North Africa
+Iraq	7807	26997.999999979	60623.999999999	522	0.0668630716024081	Middle East & North Africa
+Ireland	157	115	24	36	0.229299363057325	Western Europe
+Israel	1618	1554	7003	119	0.0735475896168109	Middle East & North Africa
+Italy	1515	407	1168	329	0.217161716171617	Western Europe
+Ivory Coast	35	176	112	5	0.142857142857143	Sub-Saharan Africa
+Jamaica	33	42	35	12	0.363636363636364	Central America & Caribbean
+Japan	386	47	6987	46	0.119170984455959	East Asia
+Jordan	82	85	159.99999999	48	0.585365853658537	Middle East & North Africa
+Kazakhstan	16	27	6	3	0.1875	Central Asia
+Kenya	174	951	4616	28	0.160919540229885	Sub-Saharan Africa
+Kosovo	164	77	350	142	0.865853658536585	Eastern Europe
+Kuwait	73	34	72	33	0.452054794520548	Middle East & North Africa
+Kyrgyzstan	24	7	19	5	0.208333333333333	Central Asia
+Laos	19	23	58	5	0.263157894736842	Southeast Asia
+Latvia	17	2	36	5	0.294117647058824	Russia & the Newly Independent States (NIS)
+Lebanon	2036	3577	8703	1060	0.520628683693517	Middle East & North Africa
+Lesotho	25	33	30	6	0.24	Sub-Saharan Africa
+Liberia	31	175	36	10	0.32258064516129	Sub-Saharan Africa
+Libya	18	27	2	6	0.333333333333333	Middle East & North Africa
+Lithuania	8	1	2	4	0.5	Russia & the Newly Independent States (NIS)
+Luxembourg	16	0	6	4	0.25	Western Europe
+Macau	33	1	46	11	0.333333333333333	East Asia
+Macedonia	109	44	53	12	0.110091743119266	Eastern Europe
+Madagascar	22	27	60	3	0.136363636363636	Sub-Saharan Africa
+Malawi	4	33	0	0	0	Sub-Saharan Africa
+Malaysia	47	136	80	9	0.191489361702128	Southeast Asia
+Maldives	3	0	13	1	0.333333333333333	South Asia
+Mali	59	304	130	14	0.23728813559322	Sub-Saharan Africa
+Malta	19	6	12	6	0.315789473684211	Western Europe
+Martinique	12	0	1	9	0.75	Central America & Caribbean
+Mauritania	19	43	29	8	0.421052631578947	Sub-Saharan Africa
+Mauritius	1	0	0	0	0	South Asia
+Mexico	451	679	547	79	0.175166297117517	North America
+Moldova	19	13	88	12	0.631578947368421	Eastern Europe
+Montenegro	2	1	0	1	0.5	Eastern Europe
+Morocco	35	287	200	17	0.485714285714286	Middle East & North Africa
+Mozambique	224	2555	1276	35	0.15625	Sub-Saharan Africa
+Myanmar	270	880.999999999	1303	13	0.0481481481481481	Southeast Asia
+Namibia	144	208	317	17	0.118055555555556	Sub-Saharan Africa
+Nepal	721	1945	1906	18	0.0249653259361997	South Asia
+Netherlands	122	42	55	68	0.557377049180328	Western Europe
+New Caledonia	31	35	23	17	0.548387096774194	Australasia & Oceania
+New Hebrides	1	0	0	1	1	Australasia & Oceania
+New Zealand	18	1	2	8	0.444444444444444	Australasia & Oceania
+Nicaragua	1968	10593	1703	60	0.0304878048780488	Central America & Caribbean
+Niger	64	428	96	16	0.25	Sub-Saharan Africa
+Nigeria	577	1863.999999999	1460.000000001	125	0.216637781629116	Sub-Saharan Africa
+North Korea	1	3	4	0	0	East Asia
+North Yemen	6	3	1	5	0.833333333333333	Middle East & North Africa
+Northern Ireland	3974	2859	2767	1099	0.276547559134373	Western Europe
+Norway	18	77	88	10	0.555555555555556	Western Europe
+Pakistan	5510	11869	22674	249	0.0451905626134301	South Asia
+Panama	126	37	83	27	0.214285714285714	Central America & Caribbean
+Papua New Guinea	81	79	88	18	0.222222222222222	Australasia & Oceania
+Paraguay	41	12	47	4	0.0975609756097561	South America
+Peru	6046	12726	14036	262	0.0433344359907377	South America
+Philippines	3363	7071	9392	201	0.0597680642283675	Southeast Asia
+Poland	34	7	30	7	0.205882352941176	Eastern Europe
+Portugal	139	32	95	46	0.330935251798561	Western Europe
+Puerto Rico	246	22	43	179	0.727642276422764	Central America & Caribbean
+Qatar	7	15	13	3	0.428571428571429	Middle East & North Africa
+Rhodesia	83	217	158	9	0.108433734939759	Sub-Saharan Africa
+Romania	6	4	9	3	0.5	Eastern Europe
+Russia	1744	3727	6592	57	0.0326834862385321	Russia & the Newly Independent States (NIS)
+Rwanda	145	3217	796	27	0.186206896551724	Sub-Saharan Africa
+Saudi Arabia	64	245.99999999	1088	31	0.484375	Middle East & North Africa
+Senegal	99	295	275	5	0.0505050505050505	Sub-Saharan Africa
+Serbia	6	0	6	1	0.166666666666667	Eastern Europe
+Serbia-Montenegro	13	5	5	4	0.307692307692308	Eastern Europe
+Seychelles	2	0	0	1	0.5	South Asia
+Sierra Leone	97	838.999999999	122	35	0.360824742268041	Sub-Saharan Africa
+Singapore	7	5	3	2	0.285714285714286	Southeast Asia
+Slovak Republic	17	7	10	1	0.0588235294117647	Eastern Europe
+Slovenia	6	1	2	1	0.166666666666667	Eastern Europe
+Solomon Islands	4	4	0	0	0	Australasia & Oceania
+Somalia	969	2266	3211.000000001	195	0.201238390092879	Sub-Saharan Africa
+South Africa	1933	2650	4571	29	0.0150025866528712	Sub-Saharan Africa
+South Korea	36	10	133	17	0.472222222222222	East Asia
+South Vietnam	1	81	0	1	1	Southeast Asia
+South Yemen	2	0	2	2	1	Middle East & North Africa
+Soviet Union	76	95	144	13	0.171052631578947	Russia & the Newly Independent States (NIS)
+Spain	3233	1266	4847	340	0.10516548097742	Western Europe
+Sri Lanka	2935	15495	15384	168	0.0572402044293015	South Asia
+St. Kitts and Nevis	2	0	9	0	0	Central America & Caribbean
+St. Lucia	1	2	12	0	0	Central America & Caribbean
+Sudan	286	2560.999999978	883.000000001	73	0.255244755244755	Sub-Saharan Africa
+Suriname	66	29	24	7	0.106060606060606	South America
+Swaziland	15	2	2	2	0.133333333333333	Sub-Saharan Africa
+Sweden	59	13	42	25	0.423728813559322	Western Europe
+Switzerland	105	74	94	50	0.476190476190476	Western Europe
+Syria	200	713	668	28	0.14	Middle East & North Africa
+Taiwan	45	60	86	3	0.0666666666666667	East Asia
+Tajikistan	175	288	1091	56	0.32	Central Asia
+Tanzania	18	40	88	5	0.277777777777778	Sub-Saharan Africa
+Thailand	1888	1777	4304	60	0.0317796610169492	Southeast Asia
+Timor-Leste	35	32	32	24	0.685714285714286	Southeast Asia
+Togo	48	76	34	5	0.104166666666667	Sub-Saharan Africa
+Trinidad and Tobago	18	6	35	4	0.222222222222222	Central America & Caribbean
+Tunisia	26	115	181	7	0.269230769230769	Middle East & North Africa
+Turkey	2820	4787	4114	246	0.0872340425531915	Middle East & North Africa
+Turkmenistan	1	0	1	1	1	Central Asia
+Uganda	346	2898	1077	41	0.11849710982659	Sub-Saharan Africa
+Ukraine	42	10	71	5	0.119047619047619	Russia & the Newly Independent States (NIS)
+United Arab Emirates	18	122	26	11	0.611111111111111	Middle East & North Africa
+United States	2362	3467	2548	263	0.111346316680779	North America
+Uruguay	75	5	5	24	0.32	South America
+Uzbekistan	20	59.000000002	165.99999998	5	0.25	Central Asia
+Vanuatu	2	0	0	1	0.5	Australasia & Oceania
+Vatican City	1	0	3	1	1	Western Europe
+Venezuela	261	211	128	31	0.118773946360153	South America
+Vietnam	10	1	27	4	0.4	Southeast Asia
+Virgin Islands (U.S.)	1	1	1	0	0	Central America & Caribbean
+Wallis and Futuna	1	0	0	1	1	Australasia & Oceania
+West Bank and Gaza Strip	1532	1186	2519	1031	0.672976501305483	Middle East & North Africa
+West Germany (FRG)	540	95	862	457	0.846296296296296	Western Europe
+Western Sahara	5	1	4	4	0.8	Middle East & North Africa
+Yemen	432	1104	1083	97	0.224537037037037	Middle East & North Africa
+Yugoslavia	205	120	278	157	0.765853658536585	Eastern Europe
+Zambia	60	70	62	11	0.183333333333333	Sub-Saharan Africa
+Zimbabwe	94	153	220	17	0.180851063829787	Sub-Saharan Africa
