@@ -1,7 +1,8 @@
 ## one script to rule them all
 
 ## clean out any previous work
-outputs <- c(list.files('figure/'),
+outputs <- c(list.files('figure/', pattern='*.png'),
+             list.files('figure/', pattern='*.pdf')
          #    list.files('result/')
              )
 file.remove(outputs)

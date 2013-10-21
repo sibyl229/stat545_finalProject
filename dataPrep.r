@@ -24,6 +24,7 @@ countryToRegion <- ddply(gDat, ~country_txt+region_txt,
                            cTor <- xDat[1,][c('country_txt', 'region_txt')]
                            return(cTor)
                          })
+## based on country
 
 countryAnnualDat <- ddply(gDat, ~country_txt+iyear, count_totals, .drop=FALSE)
 # matched <- match(countryAnnualDat$country_txt, countryToRegion$country_txt)
@@ -35,49 +36,25 @@ write.table(countryAnnualDat, "result/countryAnnualDat.tsv",
 
 countryDat <- ddply(gDat, ~country_txt, count_totals, .drop=FALSE)
 countryDat <- merge(countryDat, countryToRegion, by='country_txt')
-#countryDat$
 write.table(countryDat, "result/countryDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
 
-#dangerCountries <- arrange(countryDat, totalKilled, decreasing=TRUE)
-
-
-
-
+## based on groups
 
 evnCntByGroup <- ddply(subset(gDat, !is.na(gname)),
                        ~gname, count_totals)
 write.table(evnCntByGroup, "result/groupDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
 
+
 top <- seq(1:5)
 dangerGrps <- arrange(evnCntByGroup, totalEvents, decreasing=TRUE)[top,]$gname
 dangerGrpDat <- droplevels(subset(gDat, gname %in% dangerGrps))
-
-pEveCntByGrp <- ggplot(evnCntByGroup, aes(x=totalEvents))
-pEveCntByGrp + geom_bar(binwidth=0.3) + scale_x_log10(breaks=c(1, 10, 100, 1000))
-
-groupAnnualDat <- ddply(dangerGrpDat, ~gname+iyear, count_totals, .drop=FALSE)
-write.table(groupAnnualDat, "result/groupAnnualDat.tsv", 
+write.table(dangerGrpDat, "result/TopDangerGroupDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
-
-pGroup <- ggplot(subset(gDat, gname %in% dangerGrps), 
-                 aes(x=gname, y=iyear, fill=gname))
-pGroup + geom_violin(scale='count') + 
-  coord_flip()
-iGroupAnnual <- droplevels(subset(groupAnnualDat, gname %in% dangerGrps))
+iGroupAnnual <- ddply(dangerGrpDat, ~gname+iyear, count_totals, .drop=FALSE)
 write.table(iGroupAnnual, "result/TopDangerGroupAnnualDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
 
-pGroupEvent <- ggplot(iGroupAnnual, aes(x=iyear, y=totalKilled, fill=gname, color=gname))
-pGroupEvent + geom_histogram(stat='identity', alpha=0.3, color=NA) +
-  geom_path()
-#labs(x = "City mpg", y = "Highway", colour = "Displacement")
-
-# pGroupEvent2 <- ggplot(subset(groupAnnualDat, gname %in% dangerGrps), aes(x=iyear, weight=totalKilled, fill=gname))
-# pGroupEvent2 + geom_histogram() + geom_density(adjust=0.2, fill=NA)
 
 
-iGroupAnnual <- subset(groupAnnualDat, gname %in% dangerGrps)
-write.table(iGroupAnnual, "result/TopDangerGroupAnnualDat.tsv", 
-            quote = FALSE, sep = "\t", row.names = FALSE)
