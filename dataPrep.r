@@ -7,14 +7,13 @@ gDat <- read.table(gDatPath,
                    header=TRUE,
                    na.strings=c('','.','Unknown'))
 
-count_totals <- function(xDat, ...){
+count_totals <- function(xDat){
   result <- summarize(xDat,
                       totalEvents=length(eventid),
                       totalKilled=sum(nkill, na.rm=TRUE),
                       totalWounded=sum(nwound, na.rm=TRUE),
                       foreignTarget=sum(as.character(country_txt) != as.character(natlty1_txt), na.rm=TRUE),
-                      ratioForeignTarget=foreignTarget/totalEvents,
-                      ...
+                      ratioForeignTarget=foreignTarget/totalEvents
   )  
   return(result)
 }
@@ -50,10 +49,28 @@ write.table(evnCntByGroup, "result/groupDat.tsv",
 top <- seq(1:5)
 dangerGrps <- arrange(evnCntByGroup, totalEvents, decreasing=TRUE)[top,]$gname
 dangerGrpDat <- droplevels(subset(gDat, gname %in% dangerGrps))
+groupAlias <- data.frame(
+  gname=c(
+    'Shining Path (SL)',                               
+    'Farabundo Marti National Liberation Front (FMLN)',
+    'Irish Republican Army (IRA)',
+    'Revolutionary Armed Forces of Colombia (FARC)',   
+    'Taliban'), 
+  galias=c(
+    'SL',
+    'FMLN',
+    'IRA',
+    'FARC',
+    'Taliban'
+    )) 
+dangerGrpDat <- merge(dangerGrpDat, groupAlias, by='gname')
 write.table(dangerGrpDat, "result/TopDangerGroupDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
-iGroupAnnual <- ddply(dangerGrpDat, ~gname+iyear, count_totals, .drop=FALSE)
-write.table(iGroupAnnual, "result/TopDangerGroupAnnualDat.tsv", 
+
+
+dangerGrpAnnual <- ddply(dangerGrpDat, ~gname+iyear, count_totals, .drop=FALSE)
+dangerGrpAnnual <- merge(dangerGrpAnnual, groupAlias, by='gname')
+write.table(dangerGrpAnnual, "result/TopDangerGroupAnnualDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)
 
 

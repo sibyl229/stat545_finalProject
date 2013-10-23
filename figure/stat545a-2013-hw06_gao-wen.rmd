@@ -1,9 +1,6 @@
 Assignment 6
 ========================================================
 
-![barchart of total words by Race](group_impact_bar.png)
+![Annual Terrorist Activities of Major Groups](group_impact_bar.png)
 
-```{r fig.width=7, fig.height=6}
-plot(cars)
-```
 
