@@ -8,6 +8,6 @@ outputs <- c(list.files('figure/', pattern='*.png', full.names=T),
 file.remove(outputs)
 
 ## run my scripts
-#source("dataPrep.r")
+source("dataPrep.r")
 source("plotByGroup.r")
 #source("plot.r") #not exactly working yet
