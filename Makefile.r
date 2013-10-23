@@ -10,4 +10,4 @@ file.remove(outputs)
 ## run my scripts
 source("dataPrep.r")
 source("plotByGroup.r")
-#source("plot.r") #not exactly working yet
+source("plotByCountry.r") 
