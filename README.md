@@ -14,12 +14,12 @@ How to replicate my analysis
   * When you run the pipeline the first time, you will get warnings about `file.remove()` trying to remove files that don't exist. That's OK. They will exist and will be removed and remade on subsequent runs.
   * New files you should see after running the pipeline:
   
-[1] "[`figure//attacksVsKilledMiddleEast.svg`](figure//attacksVsKilledMiddleEast.svg)"
-[2] "[`figure//attacksVsKilledRegional.svg`](figure//attacksVsKilledRegional.svg)"    
-[3] "[`figure//group_impact_bar.svg`](figure//group_impact_bar.svg)"                  
-[4] "[`figure//group_impact_violin.svg`](figure//group_impact_violin.svg)"            
-[5] "[`figure//numAttackesVsNumKilled.svg`](figure//numAttackesVsNumKilled.svg)"      
-[6] "[`figure//pKilledvsAttacks.svg`](figure//pKilledvsAttacks.svg)"                  
-[7] "[`figure//SouthAsiaTotalAttackes.svg`](figure//SouthAsiaTotalAttackes.svg)"      
+[1] "[`figure//attacksVsKilledMiddleEast.png`](figure//attacksVsKilledMiddleEast.png)"
+[2] "[`figure//attacksVsKilledRegional.png`](figure//attacksVsKilledRegional.png)"    
+[3] "[`figure//group_impact_bar.png`](figure//group_impact_bar.png)"                  
+[4] "[`figure//group_impact_violin.png`](figure//group_impact_violin.png)"            
+[5] "[`figure//numAttackesVsNumKilled.png`](figure//numAttackesVsNumKilled.png)"      
+[6] "[`figure//pKilledvsAttacks.png`](figure//pKilledvsAttacks.png)"                  
+[7] "[`figure//SouthAsiaTotalAttackes.png`](figure//SouthAsiaTotalAttackes.png)"      
 
   

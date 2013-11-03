@@ -3,9 +3,9 @@
 library(knitr)
 
 ## clean out any previous work
-outputs <- c(list.files('figure/', pattern='*.(png)|(svg)|(pdg)', full.names=T)
-         #    list.files('result/')
-             )
+outputs <- c(list.files('figure/', pattern='*.(png)|(svg)|(pdg)', full.names=T),
+             list.files('result/', full.names=T)
+            )
 file.remove(outputs)
 
 ## run my scripts

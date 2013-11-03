@@ -1,10 +1,7 @@
 library(plyr)
 library(ggplot2)
-library(RColorBrewer)
-
-myggsave <- function(filename, width=20, height=11.25, units='cm',...){
-  ggsave(filename=filename, width=width, height=height, units=units, ...)
-}
+#library(RColorBrewer)
+source('helpers.r')
 
 evnCntByGroup <- read.table('result/groupDat.tsv', sep='\t', header=TRUE)
 iGroupAnnual <- read.table('result/TopDangerGroupAnnualDat.tsv', sep='\t', header=TRUE)
@@ -41,7 +38,7 @@ pGroupEvent <- ggplot(iGroupAnnual,
 #   theme(title = element_text(size = rel(2)),
 #         axis.text = element_text(size = rel(1.5)),
 #         legend.text = element_text(size = rel(1.5)))
-ggsave('figure/group_impact_bar.svg', plot=pGroupEvent, scale=1.5)
+myggsave('figure/group_impact_bar.svg', plot=pGroupEvent, scale=1.5)
 
 numKilledPerAttack <- function(x) {
   estCoefs <- coef(lm(totalKilled ~ totalEvents, x))
