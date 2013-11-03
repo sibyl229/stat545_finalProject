@@ -12,14 +12,16 @@ How to replicate my analysis
   * Start a fresh RStudio session, make sure the above directory is the working directory, open `Makefile.r`, and click on "Source".
   * Alternatively, in a shell: `Rscript Makefile.r`.
   * When you run the pipeline the first time, you will get warnings about `file.remove()` trying to remove files that don't exist. That's OK. They will exist and will be removed and remade on subsequent runs.
-  * New files you should see after running the pipeline:
-  
-[1] "[`figure//attacksVsKilledMiddleEast.png`](figure//attacksVsKilledMiddleEast.png)"
-[2] "[`figure//attacksVsKilledRegional.png`](figure//attacksVsKilledRegional.png)"    
-[3] "[`figure//group_impact_bar.png`](figure//group_impact_bar.png)"                  
-[4] "[`figure//group_impact_violin.png`](figure//group_impact_violin.png)"            
-[5] "[`figure//numAttackesVsNumKilled.png`](figure//numAttackesVsNumKilled.png)"      
-[6] "[`figure//pKilledvsAttacks.png`](figure//pKilledvsAttacks.png)"                  
-[7] "[`figure//SouthAsiaTotalAttackes.png`](figure//SouthAsiaTotalAttackes.png)"      
+  * New files you should see after running the pipeline:  
+<ul>
+<li><a href="figure//attacksVsKilledMiddleEast.png"><code>figure//attacksVsKilledMiddleEast.png</code></a></li>
+<li><a href="figure//attacksVsKilledRegional.png"><code>figure//attacksVsKilledRegional.png</code></a></li>
+<li><a href="figure//group_impact_bar.png"><code>figure//group_impact_bar.png</code></a></li>
+<li><a href="figure//group_impact_violin.png"><code>figure//group_impact_violin.png</code></a></li>
+<li><a href="figure//numAttackesVsNumKilled.png"><code>figure//numAttackesVsNumKilled.png</code></a></li>
+<li><a href="figure//pKilledvsAttacks.png"><code>figure//pKilledvsAttacks.png</code></a></li>
+<li><a href="figure//SouthAsiaTotalAttackes.png"><code>figure//SouthAsiaTotalAttackes.png</code></a></li>
+</ul>
 
+- [stat545a-2013-hw06_gao-wen.html](stat545a-2013-hw06_gao-wen.html)
   

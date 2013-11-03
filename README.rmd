@@ -12,15 +12,18 @@ How to replicate my analysis
   * Start a fresh RStudio session, make sure the above directory is the working directory, open `Makefile.r`, and click on "Source".
   * Alternatively, in a shell: `Rscript Makefile.r`.
   * When you run the pipeline the first time, you will get warnings about `file.remove()` trying to remove files that don't exist. That's OK. They will exist and will be removed and remade on subsequent runs.
-  * New files you should see after running the pipeline:
-  
+  * New files you should see after running the pipeline:  
 ```{r results='asis', echo=FALSE}
 files <- list.files('figure/', pattern="*.png", full.names=T)
 flst <- c()
 for (fname in files) {
-  ffn <- sprintf("[`%s`](%s)", fname, fname)
+  ffn <- sprintf("- [`%s`](%s)\n", fname, fname)
   flst <- c(flst, ffn)
 }
-flst
+flstText <- paste(flst, collapse="")
+library(markdown)
+cat(markdownToHTML(text = flstText,fragment.only=T))
+
 ```
+- [stat545a-2013-hw06_gao-wen.html](stat545a-2013-hw06_gao-wen.html)
   

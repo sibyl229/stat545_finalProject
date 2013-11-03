@@ -14,4 +14,4 @@ source("plotByGroup.r")
 source("plotByCountry.r") 
 
 knit2html('stat545a-2013-hw06_gao-wen.rmd')
-knit2html('README.rmd')
+knit('README.rmd')
