@@ -1,0 +1,12 @@
+archive/
+rawdata/
+*.html
+#*
+*~
+.Rproj.user
+.Rhistory
+.RData
+terror.Rproj
+
+.DS_Store
+.ropeproject

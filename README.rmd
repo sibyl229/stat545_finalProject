@@ -1,0 +1,29 @@
+README
+========================================================
+## Being updated on Nov 2nd, 2013
+
+How to replicate my analysis
+
+  * Clone the repo!
+  * Download into an empty directory:
+    - Input data: [`Terrorism Dataset`](data/clean_globalterrorismdb_1012dist.tsv). This file is modified from the original data by removing unnecessary text columns, so it won't give error when loading into R.
+    - Scripts: [`dataPrep.r`](dataPrep.r), [`plotByGroup.r`](plotByGroup.r), and [`plotByCountry.r`](plotByCountry.r)
+    - Makefile-like script: [`Makefile.r`](Makefile.r)
+  * Start a fresh RStudio session, make sure the above directory is the working directory, open `Makefile.r`, and click on "Source".
+  * Alternatively, in a shell: `Rscript Makefile.r`.
+  * When you run the pipeline the first time, you will get warnings about `file.remove()` trying to remove files that don't exist. That's OK. They will exist and will be removed and remade on subsequent runs.
+  * New files you should see after running the pipeline:  
+```{r results='asis', echo=FALSE}
+files <- list.files('figure/', pattern="*.png", full.names=T)
+flst <- c()
+for (fname in files) {
+  ffn <- sprintf("- [`%s`](%s)\n", fname, fname)
+  flst <- c(flst, ffn)
+}
+flstText <- paste(flst, collapse="")
+library(markdown)
+cat(markdownToHTML(text = flstText,fragment.only=T))
+
+```
+- [stat545a-2013-hw06_gao-wen.html](stat545a-2013-hw06_gao-wen.html)
+  
