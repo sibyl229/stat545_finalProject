@@ -2,7 +2,6 @@ README
 ========================================================
 
 
-
 How to replicate my analysis
 
   * Clone the repo!

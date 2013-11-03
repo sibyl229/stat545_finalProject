@@ -46,7 +46,7 @@ write.table(evnCntByGroup, "result/groupDat.tsv",
             quote = FALSE, sep = "\t", row.names = FALSE)
 
 
-top <- seq(1:5)
+top <- seq(1:6)
 dangerGrps <- arrange(evnCntByGroup, totalEvents, decreasing=TRUE)[top,]$gname
 dangerGrpDat <- droplevels(subset(gDat, gname %in% dangerGrps))
 groupAlias <- data.frame(
@@ -55,14 +55,17 @@ groupAlias <- data.frame(
     'Farabundo Marti National Liberation Front (FMLN)',
     'Irish Republican Army (IRA)',
     'Revolutionary Armed Forces of Colombia (FARC)',   
-    'Taliban'), 
+    'Taliban',
+    'Basque Fatherland and Freedom (ETA)'), 
   galias=c(
     'SL',
     'FMLN',
     'IRA',
     'FARC',
-    'Taliban'
+    'Taliban',
+    'ETA'
     )) 
+write.table(groupAlias, "result/groupAlias.tsv")
 dangerGrpDat <- merge(dangerGrpDat, groupAlias, by='gname')
 write.table(dangerGrpDat, "result/TopDangerGroupDat.tsv", 
             quote = FALSE, sep = "\t", row.names = FALSE)

@@ -1,9 +1,50 @@
-Assignment 6
+Assignment 6 (Currently been modified on Nov 2)
 ========================================================
-
-![barchart of total words by Race](group_impact_bar.png)
-
-```{r fig.width=7, fig.height=6}
-plot(cars)
+```{r include = FALSE}
+opts_chunk$set(tidy = FALSE,
+               comment=NA)
 ```
+
+```{r echo=FALSE}
+library(xtable)
+html_print <- function(x, ..., digits = 0, include.rownames = FALSE, 
+                       header=names(x)){
+  # print html table with customized header, 
+  # without permanently changing column names of the dataframe
+  origHeader <- names(x)
+  names(x) <- header
+  print(xtable(x, digits = digits, ...), 
+        type = 'html', include.rownames = include.rownames)
+  names(x) <- origHeader
+}
+```
+
+```{r results='asis', echo=FALSE}
+#groupAlias <- read.table('result/groupAlias.tsv', sep='\t')
+library(plyr)
+dangerGrpDat <- read.table('result/TopDangerGroupDat.tsv', sep='\t', header=TRUE)
+topGrpTotals <- ddply(dangerGrpDat, ~gname, summarize,
+                      totalEvents=length(eventid),
+                      totalKilled=sum(nkill, na.rm=TRUE)
+                      )
+```
+
+These terrorist groups are the top `r nrow(topGrpTotals)` ranked by the total number of terrorist attacks they organized over the years.
+```{r results='asis', echo=FALSE}
+topGrpTotals <- arrange(topGrpTotals, totalEvents, decreasing=TRUE)
+html_print(topGrpTotals, header=c('Group Name',
+                                  'Total Events', 'Total Killed'),
+           include.rownames = TRUE)
+
+```
+
+### The Rises and Falls Some of the Most Active Terrorist Group in History
+![group impact](figure/group_impact_bar.svg)
+
+
+![group impact violin](figure/group_impact_violin.svg)
+
+![Number of killed against number of attacks](figure/pKilledvsAttacks.svg)
+
+
 

@@ -3,6 +3,7 @@ library(RColorBrewer)
 
 countryDat <- read.table('result/countryDat.tsv', sep='\t', header=TRUE)
 countryDat <- within(countryDat, country_txt <- reorder(country_txt, -totalEvents))
+countryAnnualDat <- read.table('result/countryAnnualDat.tsv', sep='\t', header=TRUE)
 
 regions <- 'South Asia' #c('Middle East & North Africa')
 
@@ -10,14 +11,14 @@ p <- ggplot(subset(countryDat, region_txt==regions),
             aes(x=country_txt, y=totalEvents))
 
 p <- p + geom_bar(stat="identity") +coord_flip()
-ggsave('figure/SouthAsiaTotalAttackes.png')
+ggsave('figure/SouthAsiaTotalAttackes.svg')
 
 
 pEventKilled <- ggplot(countryDat,
                        aes(x=totalEvents, y=totalKilled, color=region_txt))
 pEventKilled + geom_point() +
   scale_x_log10() + scale_y_log10()
-ggsave('figure/numAttackesVsNumKilled.png')
+ggsave('figure/numAttackesVsNumKilled.svg')
 
 highLight <- function(x, labels){
   newx <- c()
@@ -36,7 +37,7 @@ pEventTrend <- ggplot(countryAnnualDat,
 pEventTrend + geom_point(alpha=0.3) + scale_size_area(max_size=10) + 
   facet_wrap(~ region_txt) +
   geom_smooth(method='loess') 
-ggsave('figure/attacksVsKilledRegional.png')
+ggsave('figure/attacksVsKilledRegional.svg')
 
 
 pEventTrend2 <- ggplot(subset(countryAnnualDat, region_txt=='Middle East & North Africa'),
@@ -44,7 +45,7 @@ pEventTrend2 <- ggplot(subset(countryAnnualDat, region_txt=='Middle East & North
                            color=country_txt))
 pEventTrend2 + geom_point(alpha=0.3) + scale_size_area(max_size=10) + 
   geom_smooth(method='loess') 
-ggsave('figure/attacksVsKilledMiddleEast.png')
+ggsave('figure/attacksVsKilledMiddleEast.svg')
 
 
 # p
