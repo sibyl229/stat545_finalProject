@@ -1,6 +1,6 @@
 README
 ========================================================
-
+## Being updated on Nov 2nd, 2013
 
 How to replicate my analysis
 
@@ -15,7 +15,7 @@ How to replicate my analysis
   * New files you should see after running the pipeline:
   
 ```{r results='asis', echo=FALSE}
-files <- list.files('figure/', pattern="*.png", full.names=T)
+files <- list.files('figure/', pattern="*.svg", full.names=T)
 flst <- c()
 for (fname in files) {
   ffn <- sprintf("[`%s`](%s)", fname, fname)

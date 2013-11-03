@@ -11,7 +11,7 @@ Assignment 6 (Currently been modified on Nov 2)
 
 These terrorist groups are the top 6 ranked by the total number of terrorist attacks they organized over the years.
 <!-- html table generated in R 3.0.2 by xtable 1.7-1 package -->
-<!-- Sat Nov  2 20:53:01 2013 -->
+<!-- Sat Nov  2 23:53:22 2013 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> Group Name </TH> <TH> Total Events </TH> <TH> Total Killed </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Shining Path (SL) </TD> <TD align="right"> 4518 </TD> <TD align="right"> 11570 </TD> </TR>
