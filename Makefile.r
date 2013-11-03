@@ -13,5 +13,8 @@ source("dataPrep.r")
 source("plotByGroup.r")
 source("plotByCountry.r") 
 
-knit2html('stat545a-2013-hw06_gao-wen.rmd')
 knit('README.rmd')
+#knit2html('stat545a-2013-hw06_gao-wen.rmd')
+knit('stat545a-2013-hw06_gao-wen.rmd')
+options()$rstudio.markdownToHTML('stat545a-2013-hw06_gao-wen.md',
+                                 'stat545a-2013-hw06_gao-wen.html')
