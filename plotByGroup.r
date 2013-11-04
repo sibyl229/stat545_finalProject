@@ -64,4 +64,4 @@ pKilledvsAttacks <- ggplot(subset(iGroupAnnual, totalEvents > 0 & totalKilled > 
 #   theme(
 # title = element_text(size = rel(1.5)),
 #         axis.text = element_text(size=rel(1.5)))
-myggsave('figure/pKilledvsAttacks.svg', plot=pKilledvsAttacks)
+myggsave('figure/group_pKilledvsAttacks.svg', plot=pKilledvsAttacks)

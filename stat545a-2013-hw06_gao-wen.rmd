@@ -44,7 +44,7 @@ html_print(topGrpTotals, header=c('Group Name',
 
 ![group impact violin](figure/group_impact_violin.svg)
 
-![Number of killed against number of attacks](figure/pKilledvsAttacks.svg)
+![Number of killed against number of attacks](figure/group_pKilledvsAttacks.svg)
 
 
 

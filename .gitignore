@@ -1,6 +1,7 @@
 archive/
 rawdata/
 *.html
+*.pdf
 #*
 *~
 .Rproj.user
