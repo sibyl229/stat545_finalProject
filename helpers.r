@@ -1,7 +1,8 @@
 library(ggplot2)
 
 myggsave <- function(filename, width=20, height=11.25, units='cm',...){
-  defaultFormats <- c(".png", ".svg")
+  ##defaultFormats <- c(".png", ".svg")
+  defaultFormats <- ".png"
   fileNames <- c(filename)
   for (fmt in defaultFormats){
     # generate file names of all default formats
