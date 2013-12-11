@@ -21,7 +21,7 @@ pGroup <- ggplot(dangerGrpDat,
   coord_flip() + scale_x_reverse(labels=NULL, breaks=NULL) +
   labs(x='', y = "Year", fill = "Group Name",
        title="Number of Terrorist Attacks By Groups Over Time")
-myggsave('figure/group_impact_violin.svg', plot=pGroup, width=15, height=11, units='cm')
+myggsave('figure/group_impact_violin.png', plot=pGroup, width=15, height=11, units='cm')
 
 # png('figure/group_impact_violin.png', width=900,height=500) # starts writing a PDF to file
 # pGroup + geom_violin(scale='count') + coord_flip()                   # makes the actual plot
@@ -38,7 +38,7 @@ pGroupEvent <- ggplot(iGroupAnnual,
 #   theme(title = element_text(size = rel(2)),
 #         axis.text = element_text(size = rel(1.5)),
 #         legend.text = element_text(size = rel(1.5)))
-myggsave('figure/group_impact_bar.svg', plot=pGroupEvent, scale=1.5)
+myggsave('figure/group_impact_bar.png', plot=pGroupEvent, scale=1.5)
 
 numKilledPerAttack <- function(x) {
   estCoefs <- coef(lm(totalKilled ~ totalEvents, x))
@@ -64,4 +64,4 @@ pKilledvsAttacks <- ggplot(subset(iGroupAnnual, totalEvents > 0 & totalKilled > 
 #   theme(
 # title = element_text(size = rel(1.5)),
 #         axis.text = element_text(size=rel(1.5)))
-myggsave('figure/group_pKilledvsAttacks.svg', plot=pKilledvsAttacks)
+myggsave('figure/group_pKilledvsAttacks.png', plot=pKilledvsAttacks)
